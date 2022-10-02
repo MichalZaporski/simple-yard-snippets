@@ -1,0 +1,20 @@
+{
+  "name": "simple-yard-snippets",
+  "displayName": "Simple YARD Snippets",
+  "description": "Speed up writing YARD comments.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "ruby",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
