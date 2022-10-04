@@ -2,6 +2,7 @@
   "name": "simple-yard-snippets",
   "displayName": "Simple YARD Snippets",
   "description": "Speed up writing YARD comments.",
+  "publisher": "MichalZaporski",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.71.0"
