@@ -1,14 +1,16 @@
 # Simple YARD Snippets
 
-Simple YARD Snippets helps developers to write YARD comments quickly.
+Simple YARD Snippets helps developers write YARD comments quickly.
 
 ![Example](images/example.gif)
 
 ## Usage
 
-To print a snippet of the selected tag, start typing the tag name without the `@` sign.
+To use the snippets start typing the YARD tag name without the `@` character.
 
-All the supported tags:
+You should also be able to see a list of all available snippets by typing `YARD`.
+
+### All supported tags:
 
 - `@param`
 - `@option`
@@ -19,6 +21,14 @@ All the supported tags:
 - `@yield`
 - `@yieldparam`
 - `@yieldreturn`
+- `@see`
+- `@abstract`
+- `@deprecated`
+- `@overload`
+- `@!attribute`
+- `@!method`
+- `@!parse`
+- `@!macro`
 
 ## Release Notes
 

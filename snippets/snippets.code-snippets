@@ -1,83 +1,159 @@
 {
-	"YARD @param": {
-		"scope": "ruby",
-		"prefix": "YARD param",
-		"body": [
-			"# @param ${1:name} [${2:types}] ${3:description}"
-		],
-		"description": "YARD @param template"
-	},
+  "YARD @param": {
+    "scope": "ruby",
+    "prefix": "YARD param",
+    "body": [
+      "# @param ${1:name} [${2:types}] ${3:description}"
+    ],
+    "description": "YARD @param template.\nDocuments a single method parameter (either regular or keyword)."
+  },
 
-	"YARD @option": {
-		"scope": "ruby",
-		"prefix": "YARD option",
-		"body": [
-			"# @option ${1:name} [${2:types}] ${3:key} ${4:description}"
-		],
-		"description": "YARD @option template"
-	},
+  "YARD @option": {
+    "scope": "ruby",
+    "prefix": "YARD option",
+    "body": [
+      "# @option ${1:name} [${2:types}] ${3:key} ${4:description}"
+    ],
+    "description": "YARD @option template.\nNote: For keyword parameters, use `@param`, not `@option`.\nDescribe an options hash in a method."
+  },
 
-	"YARD @return": {
-		"scope": "ruby",
-		"prefix": "YARD return",
-		"body": [
-			"# @return [${1:types}] ${2:description}"
-		],
-		"description": "YARD @return template."
-	},
+  "YARD @return": {
+    "scope": "ruby",
+    "prefix": "YARD return",
+    "body": [
+      "# @return [${1:types}] ${2:description}"
+    ],
+    "description": "YARD @return template.\nDescribes the return value (and type or types) of a method."
+  },
 
-	"YARD @raise": {
-		"scope": "ruby",
-		"prefix": "YARD raise",
-		"body": [
-			"# @raise [${1:types}] ${2:description}"
-		],
-		"description": "YARD @raise template."
-	},
+  "YARD @raise": {
+    "scope": "ruby",
+    "prefix": "YARD raise",
+    "body": [
+      "# @raise [${1:types}] ${2:description}"
+    ],
+    "description": "YARD @raise template.\nDescribes that a method may raise a given exception."
+  },
 
-	"YARD @example": {
-		"scope": "ruby",
-		"prefix": "YARD example",
-		"body": [
-			"# @example ${1:description}",
-			"#   ${2:example}"
-		],
-		"description": "YARD @example template."
-	},
+  "YARD @example": {
+    "scope": "ruby",
+    "prefix": "YARD example",
+    "body": [
+      "# @example ${1:title}",
+      "#   ${2:example}"
+    ],
+    "description": "YARD @example template.\nShow an example snippet of code for an object. The first line is an optional title."
+  },
 
-	"YARD @todo": {
-		"scope": "ruby",
-		"prefix": "YARD todo",
-		"body": [
-			"# @todo ${1:description}"
-		],
-		"description": "YARD @todo template."
-	},
+  "YARD @todo": {
+    "scope": "ruby",
+    "prefix": "YARD todo",
+    "body": [
+      "# @todo ${1:description}"
+    ],
+    "description": "YARD @todo template.\nMarks a TODO note in the object being documented."
+  },
 
-	"YARD @yield": {
-		"scope": "ruby",
-		"prefix": "YARD yield",
-		"body": [
-			"# @yield [${1:params}] ${2:description}"
-		],
-		"description": "YARD @yield template."
-	},
+  "YARD @yield": {
+    "scope": "ruby",
+    "prefix": "YARD yield",
+    "body": [
+      "# @yield [${1:params}] ${2:description}"
+    ],
+    "description": "YARD @yield template."
+  },
 
-	"YARD @yieldparam": {
-		"scope": "ruby",
-		"prefix": "YARD yieldparam",
-		"body": [
-			"# @yieldparam ${1:name} [${2:optional, }${3:types}] ${4:description}"
-		],
-		"description": "YARD @yieldparam template."
-	},
+  "YARD @yieldparam": {
+    "scope": "ruby",
+    "prefix": "YARD yieldparam",
+    "body": [
+      "# @yieldparam ${1:name} [${2:types}] ${3:description}"
+    ],
+    "description": "YARD @yieldparam template.\nDefines a parameter yielded by a block."
+  },
 
-	"YARD @yieldreturn": {
-		"scope": "ruby",
-		"prefix": "YARD yieldreturn",
-		"body": [
-			"# @yieldreturn [${1:optional, }${2:types}] ${3:description}"
-		],
-		"description": "YARD @yieldreturn template."
-	}
+  "YARD @yieldreturn": {
+    "scope": "ruby",
+    "prefix": "YARD yieldreturn",
+    "body": [
+      "# @yieldreturn [${1:types}] ${2:description}"
+    ],
+    "description": "YARD @yieldreturn template.\nDocuments the value and type that the block is expected to return to the method."
+  },
+
+  "YARD @see": {
+    "scope": "ruby",
+    "prefix": "YARD see",
+    "body": [
+      "# @see ${1:name_or_URL} ${2:description}"
+    ],
+    "description": "YARD @see template.\n“See Also” references for an object. Accepts URLs or other code objects."
+  },
+
+  "YARD @abstract": {
+    "scope": "ruby",
+    "prefix": "YARD abstract",
+    "body": [
+      "# @abstract Subclass ${1:to define}"
+    ],
+    "description": "YARD @abstract template.\nMarks a class/module/method as abstract with optional implementor information."
+  },
+
+  "YARD @deprecated": {
+    "scope": "ruby",
+    "prefix": "YARD deprecated",
+    "body": [
+      "# @deprecated ${1:description}"
+    ],
+    "description": "YARD @deprecated template.\nMarks a method/class as deprecated with an optional description."
+  },
+
+  "YARD @overload": {
+    "scope": "ruby",
+    "prefix": "YARD overload",
+    "body": [
+      "# @overload ${1:signature(args)}",
+      "#   @return [${2:types}] ${3:description}"
+    ],
+    "description": "YARD @overload template.\nDescribe that your method can be used in various contexts with various parameters or return types."
+  },
+
+  "YARD @!attribute": {
+    "scope": "ruby",
+    "prefix": "YARD attribute",
+    "body": [
+      "# @!attribute [${1|rw,r,w|}] ${2:name}",
+      "#   @return [${3:types}] ${4:description}"
+    ],
+    "description": "YARD @!attribute template."
+  },
+
+  "YARD @!method": {
+    "scope": "ruby",
+    "prefix": "YARD method",
+    "body": [
+      "# @!method ${1:signature(args)}",
+      "#   @return [${2:types}] ${3:description}"
+    ],
+    "description": "YARD @!method template."
+  },
+
+  "YARD @!parse": {
+    "scope": "ruby",
+    "prefix": "YARD parse",
+    "body": [
+      "# @!parse ${1:code}"
+    ],
+    "description": "YARD @!parse template.\nParses a block of code as if it were present in the source file at that location."
+  },
+
+  "YARD @!macro": {
+    "scope": "ruby",
+    "prefix": "YARD macro",
+    "body": [
+      "# @!macro ${1:name}",
+      "#   ${2:body}"
+    ],
+    "description": "YARD @!macro template."
+  },
 }
