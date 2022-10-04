@@ -1,9 +1,18 @@
 # Change Log
 
-All notable changes to the "simple-yard-snippets" extension will be documented in this file.
+### v1.1.0
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Add more YARD snippets:
+  - `@see`
+  - `@abstract`
+  - `@deprecated`
+  - `@overload`
+  - `@!attribute`
+  - `@!method`
+  - `@!parse`
+  - `@!macro`
+- Update descriptions for snippets
 
-## [Unreleased]
+### v1.0.0
 
-- Initial release
+- Initial release of Simple YARD Snippets

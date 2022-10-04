@@ -29,9 +29,3 @@ You should also be able to see a list of all available snippets by typing `YARD`
 - `@!method`
 - `@!parse`
 - `@!macro`
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of Simple YARD Snippets
