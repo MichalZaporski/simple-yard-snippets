@@ -1,6 +1,6 @@
 {
 	"YARD @param": {
-    "scope": "ruby",
+		"scope": "ruby",
 		"prefix": "YARD param",
 		"body": [
 			"# @param ${1:name} [${2:types}] ${3:description}"
@@ -8,8 +8,8 @@
 		"description": "YARD @param template"
 	},
 
-  "YARD @option": {
-    "scope": "ruby",
+	"YARD @option": {
+		"scope": "ruby",
 		"prefix": "YARD option",
 		"body": [
 			"# @option ${1:name} [${2:types}] ${3:key} ${4:description}"
@@ -18,7 +18,7 @@
 	},
 
 	"YARD @return": {
-    "scope": "ruby",
+		"scope": "ruby",
 		"prefix": "YARD return",
 		"body": [
 			"# @return [${1:types}] ${2:description}"
@@ -27,7 +27,7 @@
 	},
 
 	"YARD @raise": {
-    "scope": "ruby",
+		"scope": "ruby",
 		"prefix": "YARD raise",
 		"body": [
 			"# @raise [${1:types}] ${2:description}"
@@ -35,8 +35,8 @@
 		"description": "YARD @raise template."
 	},
 
-  "YARD @example": {
-    "scope": "ruby",
+	"YARD @example": {
+		"scope": "ruby",
 		"prefix": "YARD example",
 		"body": [
 			"# @example ${1:description}",
@@ -45,8 +45,8 @@
 		"description": "YARD @example template."
 	},
 
-  "YARD @todo": {
-    "scope": "ruby",
+	"YARD @todo": {
+		"scope": "ruby",
 		"prefix": "YARD todo",
 		"body": [
 			"# @todo ${1:description}"
@@ -54,8 +54,8 @@
 		"description": "YARD @todo template."
 	},
 
-  "YARD @yield": {
-    "scope": "ruby",
+	"YARD @yield": {
+		"scope": "ruby",
 		"prefix": "YARD yield",
 		"body": [
 			"# @yield [${1:params}] ${2:description}"
@@ -63,20 +63,20 @@
 		"description": "YARD @yield template."
 	},
 
-  "YARD @yieldparam": {
-    "scope": "ruby",
+	"YARD @yieldparam": {
+		"scope": "ruby",
 		"prefix": "YARD yieldparam",
 		"body": [
-      "# @yieldparam ${1:name} [${2:optional, }${3:types}] ${4:description}"
+			"# @yieldparam ${1:name} [${2:optional, }${3:types}] ${4:description}"
 		],
 		"description": "YARD @yieldparam template."
 	},
 
-  "YARD @yieldreturn": {
-    "scope": "ruby",
+	"YARD @yieldreturn": {
+		"scope": "ruby",
 		"prefix": "YARD yieldreturn",
 		"body": [
-      "# @yieldreturn [${1:optional, }${2:types}] ${3:description}"
+			"# @yieldreturn [${1:optional, }${2:types}] ${3:description}"
 		],
 		"description": "YARD @yieldreturn template."
 	}
